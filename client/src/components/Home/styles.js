@@ -17,14 +17,9 @@ export default makeStyles((theme) => ({
     alignItems: "center",
   },
   List: { width: "100%", maxWidth: 360 },
-  gridContainer: {
-    [theme.breakpoints.down("xs")]: {
-      flexDirection: "column-reverse",
-    },
-  },
-  gridItem: {
+  giantGrid: {
+    width: "100%",
     display: "flex",
-    marginTop: "2%",
     justifyContent: "center",
   },
 }));

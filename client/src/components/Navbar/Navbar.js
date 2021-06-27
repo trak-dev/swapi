@@ -5,6 +5,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import InputBase from "@material-ui/core/InputBase";
 import MenuIcon from "@material-ui/icons/Menu";
+import Link from "@material-ui/core/Link";
 import SearchIcon from "@material-ui/icons/Search";
 import useStyles from "./styles";
 
@@ -24,14 +25,14 @@ export default function Navbar() {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            SWAPI - YANN PICAUD
+            <Link color="inherit">SWAPI - YANN PICAUD</Link>
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
             </div>
             <InputBase
-              placeholder="Search…"
+              placeholder="Rechercher..."
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
