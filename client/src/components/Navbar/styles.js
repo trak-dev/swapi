@@ -4,6 +4,7 @@ const useStyles = makeStyles((theme) =>
     root: {
       flexGrow: 1,
     },
+    link: { cursor: "pointer" },
     menuButton: {
       marginRight: theme.spacing(2),
     },

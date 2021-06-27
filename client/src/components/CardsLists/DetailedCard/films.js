@@ -5,12 +5,14 @@ import {
   CardContent,
   Button,
   Typography,
-  CardActionArea,
 } from "@material-ui/core";
 import useStyles from "./styles";
+import { useHistory, useLocation } from "react-router-dom";
 
 export default function DetailedFilms() {
+  const history = useHistory();
   const classes = useStyles();
+  const location = useLocation();
   return (
     <div className={classes.box}>
       <Card className={classes.root} variant="outlined">
@@ -59,7 +61,14 @@ export default function DetailedFilms() {
           </Typography>
         </CardContent>
         <CardActions className={classes.exit}>
-          <Button size="large" variant="contained" color="default">
+          <Button
+            size="large"
+            variant="contained"
+            color="default"
+            onClick={() => {
+              history.push(`/${location.pathname.split("/")[1]}`);
+            }}
+          >
             Revenir à la liste
           </Button>
         </CardActions>

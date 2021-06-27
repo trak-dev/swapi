@@ -8,9 +8,11 @@ import MenuIcon from "@material-ui/icons/Menu";
 import Link from "@material-ui/core/Link";
 import SearchIcon from "@material-ui/icons/Search";
 import useStyles from "./styles";
+import { useHistory } from "react-router-dom";
 
 export default function Navbar() {
   const classes = useStyles();
+  const history = useHistory();
 
   return (
     <div className={classes.root}>
@@ -25,7 +27,16 @@ export default function Navbar() {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            <Link color="inherit">SWAPI - YANN PICAUD</Link>
+            <Link
+              color="inherit"
+              underline="none"
+              className={classes.link}
+              onClick={() => {
+                history.push("/");
+              }}
+            >
+              SWAPI - YANN PICAUD
+            </Link>
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
