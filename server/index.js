@@ -6,5 +6,5 @@ const port = process.env.PORT || 5000;
 app.use("/", redirect);
 
 app.listen(port, () => {
-  console.log(`Server running at http://:${port}/`);
+  console.log(`Server running at port ${port}`);
 });
