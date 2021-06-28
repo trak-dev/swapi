@@ -11,4 +11,12 @@ export default makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
   },
+  loading: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
+    width: "100vw",
+    height: "80vh",
+  },
 }));

@@ -9,6 +9,12 @@ import {
 } from "@material-ui/core";
 import useStyles from "./styles";
 import { useHistory } from "react-router-dom";
+import logo from "../../../images/logo.png";
+import chewbaca from "../../../images/chewbaca.jpg";
+import moto from "../../../images/moto.jpg";
+import planete from "../../../images/planete.jpg";
+import vader from "../../../images/vader.jpeg";
+import vaisseau from "../../../images/vaisseau.jpg";
 
 export default function MediaCard() {
   const history = useHistory();
@@ -18,42 +24,42 @@ export default function MediaCard() {
       name: "films",
       description:
         "cliquez ici pour voir la liste de tout les films de la saga star Wars !",
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png",
+      url: logo,
       apiname: "films",
     },
     {
       name: "personnages",
       description:
         " cliquez ici pour voir la liste de tout les personnages de la saga star Wars !",
-      url: "https://www.lego.com/cdn/cs/set/assets/blt87cc12231eb0f16f/DarthVader_DCP_Sidekick-Tall1.jpg?fit=crop&format=jpg&quality=80&width=800&height=600&dpr=1",
+      url: vader,
       apiname: "people",
     },
     {
       name: "espèces",
       description:
         "cliquez ici pour voir la liste de toutes les espèces de la saga star Wars !",
-      url: "https://www.outdoorlife.com/app/uploads/2019/01/23/LRKQTDWTBHYTDVD37SOTHNSCQI.jpg",
+      url: chewbaca,
       apiname: "species",
     },
     {
       name: "véhicules",
       description:
         "cliquez ici pour voir la liste de tout les véhicules de la saga star Wars !",
-      url: "https://media.dondinojuguetes.es/product/vehiculos-e9-star-wars-800x800.jpg",
+      url: moto,
       apiname: "vehicles",
     },
     {
       name: "vaisseaux",
       description:
         "cliquez ici pour voir la liste de tout les vaisseaux de la saga star Wars !",
-      url: "https://www.denofgeek.com/wp-content/uploads/2016/01/millennium-falcon.jpg",
+      url: vaisseau,
       apiname: "starships",
     },
     {
       name: "planètes",
       description:
         "cliquez ici pour voir la liste de toutes les planètes de la saga star Wars !",
-      url: "https://img1.starwars-holonet.com/holonet/dictionnaire/photos/planete_kamino.jpg",
+      url: planete,
       apiname: "planets",
     },
   ]);
