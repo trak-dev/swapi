@@ -19,4 +19,13 @@ export default makeStyles((theme) => ({
     width: "100vw",
     height: "80vh",
   },
+  searchbar: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
+    width: "100%",
+    marginTop: "1%",
+  },
+  search: { width: "80%" },
 }));
