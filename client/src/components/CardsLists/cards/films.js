@@ -19,12 +19,12 @@ export default function Films() {
   const history = useHistory();
   let cathegory = "films";
   const classes = useStyles();
-  
+
   useEffect(() => {
     dispatch(getAll("films"));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cathegory]);
-  
+
   const [search, setSearch] = useState("");
   const handleKeyPress = (e) => {
     if (e.keyCode === 13) {
@@ -36,6 +36,9 @@ export default function Films() {
       return (
         <div>
           <div className={classes.searchbar}>
+            <Typography variant="h4">
+              &uarr; cliquez ici pour revenir à l'accueil ! &uarr;
+            </Typography>
             <TextField
               className={classes.search}
               onKeyDown={handleKeyPress}

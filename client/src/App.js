@@ -18,7 +18,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/:cathegorie" component={Details} />
+          <Route path="/:cathegorie" exact component={Details} />
         </Switch>
       </ThemeProvider>
     </BrowserRouter>

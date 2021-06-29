@@ -33,6 +33,7 @@ const useStyles = makeStyles((theme) =>
         width: "auto",
       },
     },
+
     searchIcon: {
       padding: theme.spacing(0, 2),
       height: "100%",

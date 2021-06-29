@@ -31,45 +31,5 @@ export default function SmallDetails() {
         <Route path="/planets/:id" exact component={DetailPlanets} />
       </Switch>
     </BrowserRouter>
-    // <div>
-    //   <Grid container className={classes.root} xl>
-    //     <Grid item xs={9} sm={6} md={4}>
-    //       <Films />
-    //     </Grid>
-    //     <Grid item xs={9} sm={6} md={4}>
-    //       <Films />
-    //     </Grid>
-    //     <Grid item xs={9} sm={6} md={4}>
-    //       <Films />
-    //     </Grid>
-    //     <Grid item xs={9} sm={6} md={4}>
-    //       <Films />
-    //     </Grid>
-    //     <Grid item xs={9} sm={6} md={4}>
-    //       <Films />
-    //     </Grid>
-    //     <Grid item xs={9} sm={6} md={4}>
-    //       <Films />
-    //     </Grid>
-    //     <Grid item xs={9} sm={6} md={4}>
-    //       <Films />
-    //     </Grid>
-    //     <Grid item xs={9} sm={6} md={4}>
-    //       <Films />
-    //     </Grid>
-    //     <Grid item xs={9} sm={6} md={4}>
-    //       <Films />
-    //     </Grid>
-    //     <Grid item xs={9} sm={6} md={4}>
-    //       <Films />
-    //     </Grid>
-    //     <Grid item xs={9} sm={6} md={4}>
-    //       <Films />
-    //     </Grid>
-    //     <Grid item xs={9} sm={6} md={4}>
-    //       <Films />
-    //     </Grid>
-    //   </Grid>
-    // </div>
   );
 }

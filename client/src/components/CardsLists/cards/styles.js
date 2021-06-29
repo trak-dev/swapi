@@ -28,4 +28,7 @@ export default makeStyles((theme) => ({
     marginTop: "1%",
   },
   search: { width: "80%" },
+  [theme.breakpoints.down("sm")]: {
+    backgroundColor: theme.palette.secondary.main,
+  },
 }));
