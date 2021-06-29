@@ -38,12 +38,16 @@ export default function DetailedPeople() {
             >
               {swapidata.name}
             </Typography>
-            <Typography variant="h6" mt={6}>
+            <Typography variant="h6" className={classes.intro}>
               Numero d'épisode : {swapidata.name}
             </Typography>
-            <Typography variant="h6">taille : {swapidata.height} cm</Typography>
-            <Typography variant="h6">poid : {swapidata.mass} kg</Typography>
-            <Typography variant="h6">
+            <Typography variant="h6" className={classes.intro}>
+              taille : {swapidata.height} cm
+            </Typography>
+            <Typography variant="h6" className={classes.intro}>
+              poid : {swapidata.mass} kg
+            </Typography>
+            <Typography variant="h6" className={classes.intro}>
               couleur de cheuveux : {swapidata.hair_color}
             </Typography>
             <Typography variant="h6" className={classes.intro}>

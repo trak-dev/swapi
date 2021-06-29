@@ -37,18 +37,18 @@ export default function DetailedFilms() {
               gutterBottom
               align="center"
             >
-              titre du film
+              {swapidata.title}
             </Typography>
-            <Typography variant="h6" mt={6}>
+            <Typography variant="h6" className={classes.intro}>
               Numero d'épisode : {swapidata.episode_id}
             </Typography>
-            <Typography variant="h6">
+            <Typography variant="h6" className={classes.intro}>
               Directeur : {swapidata.director}
             </Typography>
-            <Typography variant="h6">
+            <Typography variant="h6" className={classes.intro}>
               Producteurs : {swapidata.producer}
             </Typography>
-            <Typography variant="h6">
+            <Typography variant="h6" className={classes.intro}>
               Date de sortie : {swapidata.release_date}
             </Typography>
             <Typography variant="h6" className={classes.intro}>
