@@ -48,10 +48,10 @@ export default function DetailedPeople() {
               poid : {swapidata.mass} kg
             </Typography>
             <Typography variant="h6" className={classes.intro}>
-              couleur de cheuveux : {swapidata.hair_color}
+              couleur de cheveux : {swapidata.hair_color}
             </Typography>
             <Typography variant="h6" className={classes.intro}>
-              couleur de peaux : {swapidata.skin_color}
+              couleur de peau : {swapidata.skin_color}
             </Typography>
             <Typography variant="h6" className={classes.intro}>
               couleur des yeux : {swapidata.gender}

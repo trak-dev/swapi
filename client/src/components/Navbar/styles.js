@@ -3,6 +3,11 @@ const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       flexGrow: 1,
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      backgroundColor: "black",
+      color: "yellow",
     },
     link: { cursor: "pointer" },
     menuButton: {
@@ -10,7 +15,6 @@ const useStyles = makeStyles((theme) =>
     },
     title: {
       flexGrow: 1,
-      display: "none",
       [theme.breakpoints.up("sm")]: {
         display: "block",
       },
