@@ -54,13 +54,13 @@ export default function DetailedPeople() {
               couleur de peau : {swapidata.skin_color}
             </Typography>
             <Typography variant="h6" className={classes.intro}>
-              couleur des yeux : {swapidata.gender}
+              couleur des yeux : {swapidata.eye_color}
             </Typography>
             <Typography variant="h6" className={classes.intro}>
-              année de naissance : {swapidata.eye_color}
+              année de naissance : {swapidata.birth_year}
             </Typography>
             <Typography variant="h6" className={classes.intro}>
-              genre : {swapidata.birth_year}
+              genre : {swapidata.gender}
             </Typography>
           </CardContent>
           <CardActions className={classes.exit}>

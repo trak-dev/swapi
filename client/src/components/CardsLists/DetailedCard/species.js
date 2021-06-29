@@ -57,7 +57,7 @@ export default function DetailedSpecies() {
               Couleur des cheuveux : {swapidata.hair_colors}
             </Typography>
             <Typography variant="h6" className={classes.intro}>
-              Espérence de vie moyenne : {swapidata.average_lifespan}
+              Espérence de vie moyenne : {swapidata.average_lifespan} ans
             </Typography>
             <Typography variant="h6" className={classes.intro}>
               Langues : {swapidata.language}
