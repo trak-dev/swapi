@@ -32,7 +32,9 @@ export default function Planets() {
                 <Card className={classes.root} variant="outlined">
                   <CardActionArea
                     onClick={() => {
-                      history.push(`/people/${swapidata.name}`);
+                      history.push(
+                        `/${cathegory}/${encodeURIComponent(swapidata.name)}`
+                      );
                     }}
                   >
                     <CardContent>
@@ -55,7 +57,7 @@ export default function Planets() {
                         Type de terrain : {swapidata.terrain}
                       </Typography>
                       <Typography variant="h6">
-                        Climat : {swapidata.climate}
+                        Climat : {swapidata.climat}
                       </Typography>
                     </CardContent>
                     <Typography

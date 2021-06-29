@@ -32,7 +32,7 @@ export default function Films() {
                 <Card className={classes.root} variant="outlined">
                   <CardActionArea
                     onClick={() => {
-                      history.push(`/people/${swapidata.title}`);
+                      history.push(`/${cathegory}/${swapidata.episode_id}`);
                     }}
                   >
                     <CardContent>

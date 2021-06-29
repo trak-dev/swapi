@@ -32,7 +32,9 @@ export default function People() {
                 <Card className={classes.root} variant="outlined">
                   <CardActionArea
                     onClick={() => {
-                      history.push(`/people/${swapidata.name}`);
+                      history.push(
+                        `/${cathegory}/${swapidata.url.split("/")[5]}`
+                      );
                     }}
                   >
                     <CardContent>
