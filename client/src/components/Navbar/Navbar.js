@@ -15,6 +15,7 @@ export default function Navbar() {
       <AppBar position="static" className={classes.root}>
         <Toolbar>
           <Typography className={classes.title} variant="h4" noWrap>
+            {/* l'url est un boutton qui renvois   l'accueil oui c'est nul ... */}
             <Link
               color="inherit"
               underline="none"

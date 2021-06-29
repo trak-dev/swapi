@@ -19,6 +19,7 @@ import vaisseau from "../../../images/vaisseau.jpg";
 export default function MediaCard() {
   const history = useHistory();
   const classes = useStyles();
+  // description etc etc pour chaque cathégorie objet non dynamique donc
   const [cathegories] = useState([
     {
       name: "films",
