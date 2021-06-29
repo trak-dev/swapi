@@ -34,9 +34,6 @@ export default function Species() {
       return (
         <div>
           <div className={classes.searchbar}>
-          <Typography variant="h4">
-              &uarr; cliquez ici pour revenir à l'accueil ! &uarr;
-            </Typography>
             <TextField
               className={classes.search}
               onKeyDown={handleKeyPress}

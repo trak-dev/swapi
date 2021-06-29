@@ -9,9 +9,9 @@ export const getAll = (cathegory) => async (dispatch) => {
     console.log(error);
   }
 };
-export const getMore = (cathegory, search) => async (dispatch) => {
+export const getUrls = (cathegory) => async (dispatch) => {
   try {
-    const { data } = await api.fetchMoreCathegory(cathegory, search);
+    const { data } = await api.fetchUrls(cathegory);
     dispatch({ type: FETCH_MORE, payload: data });
   } catch (error) {
     console.log(error);
